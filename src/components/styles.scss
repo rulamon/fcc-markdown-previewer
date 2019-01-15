@@ -1,0 +1,83 @@
+$back-color: #C0C0C0;
+$bar-color: #000080;
+
+code {
+  background-color: $back-color;
+  padding: 2px 5px;
+}
+pre {
+  background-color: $back-color;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $back-color;
+}
+.wrapper {
+  max-width: 700px;
+  margin: 20px auto;
+  border: double 4px black;
+  border-radius: 1px;
+  background: $back-color;
+  background-color: $back-color;
+      
+  .top-bar {
+    height: 19px;
+    display: flex;
+    border-bottom: solid 1px black;
+    
+    .button {
+      background-color: $back-color;
+    }
+    .left-button{
+      border-right: solid 1px black;
+      flex-basis: 23px;
+      text-align: center;
+      padding: 8px 0;
+      
+      #dash{
+        height: 1px;
+        background-color: white;
+        border: solid 1px black;
+        width: 6px;
+        box-shadow: 1px 1px grey;
+        margin: auto;
+      }
+    }
+    .bar-title {
+      background-color: $bar-color;
+      color: white;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 0.8em;
+      text-align: center;
+      flex-basis: 100%;
+      padding: 2px;
+      
+    }
+    .right-button {
+      border: outset 2px;
+      padding: -2px;
+      flex-basis: 16px;
+    }
+  }
+  #editor {
+    width: 99%;
+    height: 200px;
+    border: none;
+    outline: none;
+    resize: vertical;
+    margin: 0 -50px -4px 0;
+    padding-left: 5px;
+  }
+  #preview {
+    background-color: white;
+    height: 100%;
+    min-height: 190px;
+    padding-left: 5px;
+    margin-top: -21px;
+  }
+}
